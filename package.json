@@ -15,12 +15,16 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
     "drizzle-orm": "^0.28.6",
+    "emoji-mart": "^5.5.2",
+    "emoji-picker-react": "^4.5.2",
+    "grapheme-splitter": "^1.0.4",
     "lucide-react": "^0.284.0",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
     "tailwind-merge": "^1.14.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/node": "^20",
