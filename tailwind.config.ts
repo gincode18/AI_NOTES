@@ -105,5 +105,5 @@ module.exports = {
       "winter",
     ],
   },
-  plugins: [require("daisyui")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography"),require("daisyui")],
 }
