@@ -57,13 +57,13 @@ const DashboardPage = async (props: Props) => {
               return (
                 <a href={`/notebook/${note.id}`} key={note.id}>
                   <div className="border border-stone-300 rounded-lg overflow-hidden flex flex-col hover:shadow-xl transition hover:-translate-y-1">
-                    {/* <Image
+                    <img
                       width={400}
                       height={200}
                       alt={note.name}
                       src={note.imageUrl || ""}
-                    /> */}
-                    {/* <div className="p-4">
+                    />
+                    <div className="p-4">
                       <h3 className="text-xl font-semibold text-gray-900">
                         {note.name}
                       </h3>
@@ -71,7 +71,7 @@ const DashboardPage = async (props: Props) => {
                       <p className="text-sm text-gray-500">
                         {new Date(note.createdAt).toLocaleDateString()}
                       </p>
-                    </div> */}
+                    </div>
                   </div>
                 </a>
               );
