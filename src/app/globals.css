@@ -22,6 +22,3 @@
 .prose{
   color: black;
 }
-.prose :where(h2){
-  color: black;
-}
