@@ -75,18 +75,18 @@ const TipTapEditor = ({ note }: Props) => {
     });
   }, [debouncedEditorState]);
   return (
-    <>
+    <div className=" text-accent">
       <div className="flex">
         {editor && <TipTapMenuBar editor={editor} />}
-        <Button disabled variant={"outline"}>
+        <Button disabled variant={"outline"} className=" bg-secondary">
           {saveNote.isLoading ? "Saving..." : "Saved"}
         </Button>
       </div>
 
       <div
         className="prose 
-         prose-h1:text-inherit prose-h2:text-inherit prose-h3:text-inherit prose-h4:text-inherit prose-h5:text-inherit prose-h6:text-inherittext-inherit 
-      w-full mt-4 
+         prose-h1:text-accent prose-h2:text-accent prose-h3:text-accent prose-h4:text-accent prose-h5:text-accent prose-h6:text-accent text-accent 
+      w-full mt-4  
       
       "
       >
@@ -95,12 +95,12 @@ const TipTapEditor = ({ note }: Props) => {
       <div className="h-4"></div>
       <span className="text-sm">
         Tip: Press{" "}
-        <kbd className="px-2 py-1.5 text-xs font-semibold  bg-gray-100 border border-gray-200 rounded-lg">
+        <kbd className="px-2 py-1.5 text-xs font-semibold   bg-primary border  border-secondary rounded-lg">
           Shift + A
         </kbd>{" "}
         for AI autocomplete
       </span>
-    </>
+    </div>
   );
 };
 

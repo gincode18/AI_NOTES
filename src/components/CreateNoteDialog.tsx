@@ -60,9 +60,9 @@ const CreateNoteDialog = (props: Props) => {
   return (
     <Dialog>
       <DialogTrigger>
-        <div className="border-dashed border-2 flex border-green-600 h-full rounded-lg items-center justify-center sm:flex-col hover:shadow-xl transition hover:-translate-y-1 flex-row p-4">
-          <Plus className="w-6 h-6 text-green-600" strokeWidth={3} />
-          <h2 className="font-semibold text-green-600 sm:mt-2">
+        <div className="border-dashed border-2 flex group border-primary hover:border-secondary h-full rounded-lg items-center justify-center sm:flex-col hover:shadow-xl transition hover:-translate-y-1 flex-row p-4">
+          <Plus className="w-6 h-6  text-primary group-hover:text-secondary" strokeWidth={3} />
+          <h2 className="font-semibold text-primary group-hover:text-secondary sm:mt-2">
             New Note Book
           </h2>
         </div>
@@ -82,12 +82,12 @@ const CreateNoteDialog = (props: Props) => {
           />
           <div className="h-4"></div>
           <div className="flex items-center gap-2">
-            <Button type="reset" variant={"secondary"}>
+            <Button type="reset" className=" bg-red-600 hover:bg-red-300">
               Cancel
             </Button>
             <Button
               type="submit"
-              className="bg-green-600"
+              className=" bg-primary hover:bg-secondary"
               disabled={createNotebook.isLoading}
             >
               {createNotebook.isLoading && (
